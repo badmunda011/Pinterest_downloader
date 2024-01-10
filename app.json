@@ -1,0 +1,69 @@
+{
+    "name": "Pinterest-dl-Pro",
+    "description": "A Telegram Bot Download Images & Videos from Pinterest.com to your device.",
+    "logo": "https://i.imgur.com/dePcvmz.jpg",
+    "keywords": [
+        "telegram",
+        "pinterest",
+        "download",
+        "video",
+        "image"
+    ],
+    "repository": "https://github.com/SudoR2spr/Pinterest_downloader",
+    "success_url": "https://t.me/WD_Topic_Group",
+    "env": {
+        "ENV": {
+            "description": "Setting this to ANYTHING will enable environment variables.",
+            "value": "ANYTHING",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get this value from my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "TMP_DOWNLOAD_DIRECTORY": {
+            "description": "This is required for the plugins involving the file system.",
+            "value": "./DOWNLOADS/",
+            "required": false
+        },
+        "BOT_TOKEN": {
+            "description": "Telegram Bot Token from @Botfather",
+            "value": "",
+            "required": true
+        },
+        "MONGO_DB": {
+            "description": "Get this value from MONGODB",
+            "value": "",
+            "required": true
+        },
+        "OWNER": {
+            "description": "Add Your Telegram Username without '@'",
+            "value": "Farooq_is_KING",
+            "required": true
+        },
+        "LOG_GROUP_ID": {
+            "description": "Enter The Log Group ID -100xxxxx",
+            "value": "",
+            "required": true
+        },
+        "SUPPORT_CHAT": {
+            "description": "Your Support Chat Username without '@'",
+            "value": "https://t.me/WD_Topic_Group",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/ok-op/heroku-buildpack-ffmpeg-latest"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ]
+}

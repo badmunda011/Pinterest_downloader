@@ -1,0 +1,16 @@
+telethon==1.28.5
+telethon-tgcrypto
+hachoir
+pyquery
+urllib3
+colorama
+lxml
+requests
+termcolor
+pysocks
+fake-useragent
+requests
+pymongo
+dnspython
+aiohttp
+brotli
